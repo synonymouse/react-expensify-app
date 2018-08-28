@@ -1,0 +1,5 @@
+{
+  "eslint.enable": false,
+  "liveServer.settings.multiRootWorkspaceName": "indecision-app/public",
+  "git.ignoreLimitWarning": true
+}
