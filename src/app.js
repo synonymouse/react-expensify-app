@@ -17,15 +17,6 @@ import "./styles/styles.scss";
 
 const store = configureStore();
 
-store.dispatch(addExpense({ description: "Water bill", amount: 1000 }));
-store.dispatch(
-  addExpense({ description: "Gas bill", amount: 200, createdAt: 1000 })
-);
-store.dispatch(addExpense({ description: "Rent", amount: 109500 }));
-
-const state = store.getState();
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-
 const jsx = (
   <Provider store={store}>
     <AppRouter />
