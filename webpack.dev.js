@@ -5,8 +5,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = merge(common, {
   mode: "development",
-  // devtool: "cheap-module-source-map",
-  devtool: "inline-source-map",
+  devtool: "cheap-module-source-map",
+  // devtool: "inline-source-map",
   devServer: {
     contentBase: "./public",
     historyApiFallback: true
